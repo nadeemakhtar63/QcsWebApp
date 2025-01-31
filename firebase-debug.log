@@ -1,0 +1,98 @@
+[debug] [2025-01-31T05:00:46.677Z] ----------------------------------------------------------------------
+[debug] [2025-01-31T05:00:46.681Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\nadeemakhtar\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-01-31T05:00:46.681Z] CLI Version:   13.29.3
+[debug] [2025-01-31T05:00:46.682Z] Platform:      win32
+[debug] [2025-01-31T05:00:46.682Z] Node Version:  v22.12.0
+[debug] [2025-01-31T05:00:46.682Z] Time:          Fri Jan 31 2025 10:00:46 GMT+0500 (Pakistan Standard Time)
+[debug] [2025-01-31T05:00:46.682Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-31T05:00:46.995Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-31T05:00:46.996Z] > authorizing via signed-in user (qcsghana.gh@gmail.com)
+[debug] [2025-01-31T05:00:46.996Z] [iam] checking project admin-app-2b30e for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-01-31T05:00:46.998Z] Checked if tokens are valid: true, expires at: 1738303136736
+[debug] [2025-01-31T05:00:46.998Z] Checked if tokens are valid: true, expires at: 1738303136736
+[debug] [2025-01-31T05:00:46.999Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/admin-app-2b30e:testIamPermissions [none]
+[debug] [2025-01-31T05:00:46.999Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/admin-app-2b30e:testIamPermissions x-goog-quota-user=projects/admin-app-2b30e
+[debug] [2025-01-31T05:00:47.000Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/admin-app-2b30e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-31T05:00:49.430Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/admin-app-2b30e:testIamPermissions 200
+[debug] [2025-01-31T05:00:49.430Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/admin-app-2b30e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-31T05:00:49.432Z] Checked if tokens are valid: true, expires at: 1738303136736
+[debug] [2025-01-31T05:00:49.432Z] Checked if tokens are valid: true, expires at: 1738303136736
+[debug] [2025-01-31T05:00:49.433Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/admin-app-2b30e [none]
+[debug] [2025-01-31T05:00:51.308Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/admin-app-2b30e 200
+[debug] [2025-01-31T05:00:51.309Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/admin-app-2b30e {"projectId":"admin-app-2b30e","projectNumber":"1021347472433","displayName":"admin app","name":"projects/admin-app-2b30e","resources":{"hostingSite":"admin-app-2b30e"},"state":"ACTIVE","etag":"1_f448cd21-9d52-4f55-8b6c-42b0ad25897b"}
+[info] 
+[info] === Deploying to 'admin-app-2b30e'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-01-31T05:00:51.335Z] Checked if tokens are valid: true, expires at: 1738303136736
+[debug] [2025-01-31T05:00:51.336Z] Checked if tokens are valid: true, expires at: 1738303136736
+[debug] [2025-01-31T05:00:51.336Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/admin-app-2b30e/versions [none]
+[debug] [2025-01-31T05:00:51.336Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/admin-app-2b30e/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-01-31T05:00:55.598Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/admin-app-2b30e/versions 200
+[debug] [2025-01-31T05:00:55.599Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/admin-app-2b30e/versions {"name":"projects/1021347472433/sites/admin-app-2b30e/versions/93f48de1f208d035","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[admin-app-2b30e]: beginning deploy... 
+[info] i  hosting[admin-app-2b30e]: found 2 files in public 
+[debug] [2025-01-31T05:00:55.639Z] [hosting] uploading with 200 concurrency
+[debug] [2025-01-31T05:00:55.644Z] Checked if tokens are valid: true, expires at: 1738303136736
+[debug] [2025-01-31T05:00:55.644Z] Checked if tokens are valid: true, expires at: 1738303136736
+[debug] [2025-01-31T05:00:55.646Z] [hosting] hash cache [cHVibGlj] stored for 2 files
+[debug] [2025-01-31T05:00:55.646Z] [hosting][hash queue][FINAL] {"max":0,"min":0,"avg":0,"active":0,"complete":2,"success":2,"errored":0,"retried":0,"total":2,"elapsed":4}
+[debug] [2025-01-31T05:00:55.646Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/1021347472433/sites/admin-app-2b30e/versions/93f48de1f208d035:populateFiles [none]
+[debug] [2025-01-31T05:00:55.647Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1021347472433/sites/admin-app-2b30e/versions/93f48de1f208d035:populateFiles {"files":{"/index.html":"909aab6a317cdf05a56219993c14561d7b829e47e0b886677057ece0ec906f51","/404.html":"762bf484ba67404bd1a3b181546ea28d60dfddf18e9dd4795d8d25bcf3c1a890"}}
+[debug] [2025-01-31T05:00:57.087Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/1021347472433/sites/admin-app-2b30e/versions/93f48de1f208d035:populateFiles 200
+[debug] [2025-01-31T05:00:57.088Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1021347472433/sites/admin-app-2b30e/versions/93f48de1f208d035:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/admin-app-2b30e/versions/93f48de1f208d035/files"}
+[debug] [2025-01-31T05:00:57.089Z] [hosting][populate queue][FINAL] {"max":1445,"min":1445,"avg":1445,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1445}
+[debug] [2025-01-31T05:00:57.090Z] [hosting] uploads queued: 0
+[debug] [2025-01-31T05:00:57.091Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1738299657091}
+[info] +  hosting[admin-app-2b30e]: file upload complete 
+[debug] [2025-01-31T05:00:57.094Z] [hosting] deploy completed after 1484ms
+[debug] [2025-01-31T05:00:57.095Z] [
+  {
+    "config": {
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "admin-app-2b30e"
+    },
+    "version": "projects/1021347472433/sites/admin-app-2b30e/versions/93f48de1f208d035"
+  }
+]
+[info] i  hosting[admin-app-2b30e]: finalizing version... 
+[debug] [2025-01-31T05:00:57.103Z] Checked if tokens are valid: true, expires at: 1738303136736
+[debug] [2025-01-31T05:00:57.104Z] Checked if tokens are valid: true, expires at: 1738303136736
+[debug] [2025-01-31T05:00:57.105Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/admin-app-2b30e/versions/93f48de1f208d035 updateMask=status%2Cconfig
+[debug] [2025-01-31T05:00:57.105Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/admin-app-2b30e/versions/93f48de1f208d035 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2025-01-31T05:00:58.686Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/admin-app-2b30e/versions/93f48de1f208d035 200
+[debug] [2025-01-31T05:00:58.686Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/admin-app-2b30e/versions/93f48de1f208d035 {"name":"projects/1021347472433/sites/admin-app-2b30e/versions/93f48de1f208d035","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-01-31T05:00:55.000744Z","createUser":{"email":"qcsghana.gh@gmail.com"},"finalizeTime":"2025-01-31T05:00:58.455350Z","finalizeUser":{"email":"qcsghana.gh@gmail.com"}}
+[debug] [2025-01-31T05:00:58.686Z] [hosting] finalized version for admin-app-2b30e:[object Object]
+[info] +  hosting[admin-app-2b30e]: version finalized 
+[info] i  hosting[admin-app-2b30e]: releasing new version... 
+[debug] [2025-01-31T05:00:58.687Z] Checked if tokens are valid: true, expires at: 1738303136736
+[debug] [2025-01-31T05:00:58.687Z] Checked if tokens are valid: true, expires at: 1738303136736
+[debug] [2025-01-31T05:00:58.688Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/admin-app-2b30e/channels/live/releases versionName=projects%2F1021347472433%2Fsites%2Fadmin-app-2b30e%2Fversions%2F93f48de1f208d035
+[debug] [2025-01-31T05:00:58.688Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/admin-app-2b30e/channels/live/releases {}
+[debug] [2025-01-31T05:01:00.186Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/admin-app-2b30e/channels/live/releases 200
+[debug] [2025-01-31T05:01:00.187Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/admin-app-2b30e/channels/live/releases {"name":"projects/1021347472433/sites/admin-app-2b30e/channels/live/releases/1738299659346000","version":{"name":"projects/1021347472433/sites/admin-app-2b30e/versions/93f48de1f208d035","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-01-31T05:00:55.000744Z","createUser":{"email":"qcsghana.gh@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocLsatpuywJpSfVJHMS6fLbQ9n8QXnUPdK9g9W2nnWzTQ1Qd4w=mo"},"finalizeTime":"2025-01-31T05:00:58.455350Z","finalizeUser":{"email":"qcsghana.gh@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocLsatpuywJpSfVJHMS6fLbQ9n8QXnUPdK9g9W2nnWzTQ1Qd4w=mo"}},"type":"DEPLOY","releaseTime":"2025-01-31T05:00:59.346Z","releaseUser":{"email":"qcsghana.gh@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocLsatpuywJpSfVJHMS6fLbQ9n8QXnUPdK9g9W2nnWzTQ1Qd4w=mo"}}
+[debug] [2025-01-31T05:01:00.187Z] [hosting] release: {"name":"projects/1021347472433/sites/admin-app-2b30e/channels/live/releases/1738299659346000","version":{"name":"projects/1021347472433/sites/admin-app-2b30e/versions/93f48de1f208d035","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-01-31T05:00:55.000744Z","createUser":{"email":"qcsghana.gh@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocLsatpuywJpSfVJHMS6fLbQ9n8QXnUPdK9g9W2nnWzTQ1Qd4w=mo"},"finalizeTime":"2025-01-31T05:00:58.455350Z","finalizeUser":{"email":"qcsghana.gh@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocLsatpuywJpSfVJHMS6fLbQ9n8QXnUPdK9g9W2nnWzTQ1Qd4w=mo"}},"type":"DEPLOY","releaseTime":"2025-01-31T05:00:59.346Z","releaseUser":{"email":"qcsghana.gh@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocLsatpuywJpSfVJHMS6fLbQ9n8QXnUPdK9g9W2nnWzTQ1Qd4w=mo"}}
+[info] +  hosting[admin-app-2b30e]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/admin-app-2b30e/overview
+[info] Hosting URL: https://admin-app-2b30e.web.app
+[debug] [2025-01-31T05:01:25.812Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\nadeemakhtar\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:269:49)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+[error] 
+[error] Error: An unexpected error has occurred.
